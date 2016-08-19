@@ -14,7 +14,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIh-Ej-QXb">
+                    <rect key="frame" x="268" y="285" width="65" height="30"/>
+                    <state key="normal" title="Map view"/>
+                    <connections>
+                        <action selector="mapAction:" destination="-1" eventType="touchUpInside" id="A33-pD-57L"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jIh-Ej-QXb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H6j-DA-sdk"/>
+                <constraint firstItem="jIh-Ej-QXb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wQ5-gj-85O"/>
+            </constraints>
         </view>
     </objects>
 </document>

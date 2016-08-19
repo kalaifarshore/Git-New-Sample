@@ -8,6 +8,7 @@
 //
 
 #import "ViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()
 
@@ -26,7 +27,9 @@
 }
 - (IBAction)GitClicked:(id)sender {
     
-    NSLog(@"Git Clicked");
+    NSLog(@"map called");
+    MapViewController *mapView = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    [self.navigationController pushViewController:mapView animated:YES];
 }
 
 @end
