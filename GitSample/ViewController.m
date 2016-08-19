@@ -1,3 +1,4 @@
+
 //
 //  ViewController.m
 //  GitSample
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)GitClicked:(id)sender {
+    
+    NSLog(@"Git Clicked");
 }
 
 @end
